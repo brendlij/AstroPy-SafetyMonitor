@@ -101,12 +101,8 @@ This safety monitor is fully compatible with any ASCOM Alpaca client. It support
 1. **Discovery Protocol**: Your astronomy software should automatically find the device
 2. **Standard API**: All required ASCOM SafetyMonitor endpoints are implemented
 
-Compatible software includes:
+Tested in following softwares:
 * N.I.N.A.
-* Sequence Generator Pro
-* TheSkyX
-* Voyager
-* Any other ASCOM-compatible application
 
 ## Extending with Custom Safety Logic
 
