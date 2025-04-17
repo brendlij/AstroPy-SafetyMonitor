@@ -21,7 +21,7 @@ This safety monitor serves as:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/astropy-safetymonitor.git
+git clone https://github.com/brendlij/AstroPy-SafetyMonitor.git
 cd astropy-safetymonitor
 ```
 
