@@ -30,7 +30,7 @@ cd astropy-safetymonitor
 ```bash
 # On Windows
 python -m venv venv
-.\.venv\Scripts\Activate.ps1
+.\venv\Scripts\Activate.ps1
 
 # On Linux/macOS
 python -m venv venv
