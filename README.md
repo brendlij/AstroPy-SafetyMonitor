@@ -31,11 +31,11 @@ cd astropy-safetymonitor
 ```bash
 # On Windows
 python -m venv venv
-venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 
 # On Linux/macOS
 python -m venv venv
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### Install Dependencies
