@@ -85,7 +85,7 @@ From here, you can:
 * View the current safety status
 * Set the status to SAFE or UNSAFE
 * See device information
-* Monitor connections
+* See connection status
 
 ### Keyboard Controls
 
@@ -102,53 +102,6 @@ This safety monitor is fully compatible with any ASCOM Alpaca client. It support
 
 Tested in following softwares:
 * N.I.N.A.
-
-## Extending with Custom Safety Logic
-
-You can implement your own safety logic by modifying the following parts of the code:
-
-### Example: Reading GPIO Pins on a Raspberry Pi
-
-```python
-# At the top of the file
-import RPi.GPIO as GPIO
-
-# Initialize GPIO
-GPIO.setmode(GPIO.BCM)
-RAIN_SENSOR_PIN = 17
-GPIO.setup(RAIN_SENSOR_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-
-# Add a function to check rain sensor
-def check_rain_sensor():
-    """Return True if dry (safe), False if raining (unsafe)"""
-    return GPIO.input(RAIN_SENSOR_PIN) == GPIO.HIGH
-
-# Modify the get_safety_status function
-@app.get(f"/api/v1/{DEVICE_TYPE}/{DEVICE_NUMBER}/issafe", response_model=BoolResponse)
-def get_safety_status(ClientTransactionID: int = Query(0)) -> BoolResponse:
-    """Get the current safety status of the observatory."""
-    global is_safe_status
-    
-    # Check the actual hardware sensor instead of using the manual toggle
-    is_safe_status = check_rain_sensor()
-    
-    logging.debug(f"issafe called, ClientTransactionID={ClientTransactionID}, is_safe={is_safe_status}")
-
-    return BoolResponse(
-        Value=is_safe_status,
-        ClientTransactionID=ClientTransactionID,
-        ServerTransactionID=int(time.time())
-    )
-```
-
-## Future Development
-
-Future plans for this project include:
-* Plugin architecture for safety checks
-* Support for multiple sensors
-* Integration with weather APIs
-* Enhanced web interface with history and charts
-* Multiple safety monitor devices in one instance
 
 ## License
 
