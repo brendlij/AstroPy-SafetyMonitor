@@ -40,7 +40,7 @@ source .venv/bin/activate
 ### Install Dependencies
 
 ```bash
-pip install fastapi uvicorn pyyaml pydantic
+pip install fastapi uvicorn pyyaml pydantic python-multipart
 ```
 
 ### Run the Application
