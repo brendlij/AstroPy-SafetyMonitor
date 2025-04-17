@@ -58,7 +58,6 @@ The application is configured using a YAML file (`config.yaml`) with the followi
 # Network Settings
 alpaca_port: 11111           # Port for the ASCOM Alpaca API
 udp_port: 32227              # Port for Alpaca discovery protocol
-web_port: 8080               # Port for the web interface (currently unused)
 
 # Device Information
 device_name: "CloudWatcher"  # Device name shown to clients
