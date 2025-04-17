@@ -6,7 +6,6 @@ An ASCOM Alpaca compatible Safety Monitor implementation in Python. This applica
 
 This safety monitor serves as:
 1. A manual control for testing ASCOM-compatible astronomy software
-2. A framework for implementing custom safety logic (such as reading sensors, GPIO pins, or weather data)
 3. A reference implementation for ASCOM Alpaca in Python
 
 ## Dependencies
