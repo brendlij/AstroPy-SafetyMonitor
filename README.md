@@ -1,6 +1,6 @@
 # AstroPy SafetyMonitor
 
-An ASCOM Alpaca compatible Safety Monitor implementation in Python. This application provides a simple, manual safety monitor for astronomical equipment that can be controlled through either a web interface, keyboard controls, or API calls.
+An ASCOM Alpaca compatible Safety Monitor "Simulator" implementation in Python. This application provides a simple, manual safety monitor for astronomical equipment that can be controlled through either a web interface, keyboard controls, or API calls.
 
 ## Purpose
 
