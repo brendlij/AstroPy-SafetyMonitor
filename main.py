@@ -38,7 +38,7 @@ CONFIG_FILE = "config.yaml"
 DEFAULT_CONFIG = {
     "alpaca_port": 11111,
     "udp_port": 32227,
-    "device_name": "CloudWatcher",
+    "device_name": "SafetyMonitor",
     "device_number": 0,
     "manufacturer": "Julian Brendlin",
     "driver_version": "1.0.0",

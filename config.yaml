@@ -6,7 +6,7 @@ alpaca_port: 11111 # Port für den Alpaca HTTP-Server
 udp_port: 32227 # Port für Alpaca Discovery-Protokoll
 
 # Geräteinformationen
-device_name: "CloudWatcher" # Name des Geräts
+device_name: "SafetyMonitor" # Name des Geräts
 device_number: 0 # Gerätenummer (wenn mehrere vorhanden)
 manufacturer: "Julian Brendlin" # Hersteller
 driver_version: "1.0.0" # Treiberversion
