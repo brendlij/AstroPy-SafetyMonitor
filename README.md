@@ -31,7 +31,7 @@ cd astropy-safetymonitor
 ```bash
 # On Windows
 python -m venv venv
-.\.venv\Scripts\Activate.ps1
+.\venv\Scripts\Activate.ps1
 
 # On Linux/macOS
 python -m venv venv
@@ -41,7 +41,7 @@ source .venv/bin/activate
 ### Install Dependencies
 
 ```bash
-pip install fastapi uvicorn pyyaml pydantic
+pip install fastapi uvicorn pyyaml pydantic python-multipart
 ```
 
 ### Run the Application
