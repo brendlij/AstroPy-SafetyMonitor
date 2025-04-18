@@ -1,18 +1,18 @@
 # CloudWatcher Safety Monitor Konfiguration
 # Diese Datei enthält die Konfiguration für den ASCOM Alpaca CloudWatcher Safety Monitor
 
-# Netzwerkeinstellungen
-alpaca_port: 11111 # Port für den Alpaca HTTP-Server
-udp_port: 32227 # Port für Alpaca Discovery-Protokoll
+# Network Settings
+alpaca_port: 11111 # Port for the ASCOM Alpaca API
+udp_port: 32227 # Port for Alpaca discovery protocol
 
-# Geräteinformationen
-device_name: "SafetyMonitor" # Name des Geräts
-device_number: 0 # Gerätenummer (wenn mehrere vorhanden)
-manufacturer: "Julian Brendlin" # Hersteller
-driver_version: "1.0.0" # Treiberversion
-location: "My Observatory" # Standort des Observatoriums
+# Device Information
+device_name: "SafetyMonitor" # Device name shown to clients
+device_number: 0 # Device identifier (can have multiple devices)
+manufacturer: "Your Name" # Manufacturer name
+driver_version: "1.0.0" # Driver version
+location: "My Observatory" # Location description
 
-# Erweiterte Einstellungen
-log_level: "INFO" # Logging-Level (DEBUG, INFO, WARNING, ERROR)
-auto_open_browser: true # Browser automatisch öffnen
-web_interface_enabled: true # Web-Interface aktivieren
+# Advanced Settings
+log_level: "INFO" # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+auto_open_browser: true # Whether to open browser automatically on startup
+web_interface_enabled: true # Enable/disable web interface
